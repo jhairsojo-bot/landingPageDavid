@@ -676,7 +676,7 @@ a {
   }
 
   .polaroid__image-wrapper {
-    height: 260px;
+    height: 290px;
   }
 
   .polaroid:hover img,
@@ -730,7 +730,7 @@ a {
   }
 
   .polaroid__image-wrapper {
-    height: 220px;
+    height: 260px;
   }
 
   .letter {
