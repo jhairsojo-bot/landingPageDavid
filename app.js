@@ -10,10 +10,6 @@
       { src: 'assets/images/photo-5.jpg', alt: 'Aventura de la pareja juntos', caption: 'Cada paso a tu lado es un destino' },
       { src: 'assets/images/photo-6.jpg', alt: 'Atardecer en pareja', caption: 'El sol se pone, nosotros no' },
     ],
-    videos: [
-      { src: 'assets/videos/video-1.mp4', caption: 'Risas que quiero guardar para siempre' },
-      { src: 'assets/videos/video-2.mp4', caption: 'Un instante nuestro, eterno en el recuerdo' },
-    ],
   };
 
   var PLACEHOLDER_GRADIENTS = [
@@ -58,7 +54,7 @@
       );
 
       var els = document.querySelectorAll(
-        '.polaroid, .video-card, .section__header'
+        '.polaroid, .letter-card, .section__header'
       );
       Array.prototype.forEach.call(els, function (el) {
         self.observer.observe(el);
@@ -312,36 +308,8 @@
     });
   }
 
-  function buildVideos() {
-    var container = document.getElementById('videos-container');
-    MEDIA.videos.forEach(function (video, index) {
-      var card = document.createElement('div');
-      card.className = 'video-card';
-      card.style.transitionDelay = (index * 0.12) + 's';
-
-      var videoEl = document.createElement('video');
-      videoEl.controls = true;
-      videoEl.preload = 'metadata';
-
-      var source = document.createElement('source');
-      source.src = video.src;
-      source.type = 'video/mp4';
-      videoEl.appendChild(source);
-
-      var caption = document.createElement('p');
-      caption.className = 'video-card__caption';
-      caption.textContent = video.caption;
-
-      card.appendChild(videoEl);
-      card.appendChild(caption);
-
-      container.appendChild(card);
-    });
-  }
-
   document.addEventListener('DOMContentLoaded', function () {
     buildGallery();
-    buildVideos();
     ScrollReveal.init();
     LightboxManager.init();
     StarParticles.init();

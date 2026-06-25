@@ -328,7 +328,7 @@ a {
   padding: 0 8px;
 }
 
-.videos {
+.letter {
   position: relative;
   z-index: 1;
   padding: 7rem 2rem;
@@ -339,7 +339,7 @@ a {
   );
 }
 
-.videos__container {
+.letter__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
@@ -347,11 +347,12 @@ a {
   margin: 0 auto;
 }
 
-.video-card {
-  background: #fff;
+.letter-card {
+  background: #FDF8F2;
   border-radius: 8px;
-  overflow: hidden;
+  padding: 2.5rem 2rem;
   box-shadow: 0 4px 20px var(--color-shadow);
+  border: 1px solid rgba(201, 169, 110, 0.15);
   transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               box-shadow 0.45s ease;
   opacity: 0;
@@ -359,32 +360,67 @@ a {
   transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.45s ease;
 }
 
-.video-card.is-visible {
+.letter-card.is-visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.video-card:hover,
-.video-card:focus-within {
-  transform: translateY(-8px);
+.letter-card:hover,
+.letter-card:focus-within {
+  transform: translateY(-6px);
   box-shadow: 0 14px 40px var(--color-shadow-hover);
 }
 
-.video-card video {
-  width: 100%;
+.letter__ornament {
   display: block;
-  aspect-ratio: 16 / 9;
-  background: #1a1a1a;
-  outline: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-dark-rose);
+  margin-bottom: 1.2rem;
+  opacity: 0.6;
 }
 
-.video-card__caption {
-  padding: 1.1rem 1.5rem;
-  text-align: center;
+.letter__dropcap {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-soft-gold);
+  float: left;
+  margin: 0.15em 0.15em 0.05em 0;
+}
+
+.letter__body {
   font-family: var(--font-accent);
   font-size: 1.05rem;
   font-style: italic;
+  line-height: 1.7;
   color: var(--color-text-secondary);
+}
+
+.letter__body p + p {
+  margin-top: 0.8em;
+}
+
+.letter__divider {
+  margin: 1.5rem 0 1rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-soft-gold),
+    transparent
+  );
+  opacity: 0.4;
+}
+
+.letter__signature {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  text-align: right;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .footer {
@@ -648,16 +684,16 @@ a {
     transform: scale(1.02);
   }
 
-  .videos {
+  .letter {
     padding: 5rem 1.25rem;
   }
 
-  .videos__container {
+  .letter__container {
     grid-template-columns: 1fr;
   }
 
-  .video-card:hover,
-  .video-card:focus-within {
+  .letter-card:hover,
+  .letter-card:focus-within {
     transform: translateY(-4px);
   }
 
@@ -697,12 +733,16 @@ a {
     height: 220px;
   }
 
-  .videos {
+  .letter {
     padding: 4rem 1rem;
   }
 
-  .videos__container {
+  .letter__container {
     gap: 1.5rem;
+  }
+
+  .letter-card {
+    padding: 2rem 1.5rem;
   }
 
   .footer {
