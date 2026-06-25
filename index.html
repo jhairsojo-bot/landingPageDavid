@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería romántica — Nuestros recuerdos juntos">
+  <meta property="og:title" content="Nuestra Historia">
+  <meta property="og:description" content="Un álbum digital con nuestros momentos más especiales">
+  <meta property="og:type" content="website">
+  <title>Nuestra Historia — Álbum Digital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <h1>Para el Amor de mi vida</h1>
+      <p class="hero__date">[Fecha Especial]</p>
+      <p class="hero__quote">
+        "Cada historia de amor es hermosa, pero la nuestra es mi favorita"
+      </p>
+      <a href="#gallery" class="hero__scroll">Desplázate para recordar</a>
+    </div>
+  </header>
+
+  <section id="gallery" class="gallery">
+    <div class="section__header">
+      <h2>Nuestros momentos</h2>
+      <p>Siete momentos que el tiempo no borrará</p>
+    </div>
+    <div class="gallery__grid" id="gallery-grid">
+    </div>
+  </section>
+
+  <section id="videos" class="videos">
+    <div class="section__header">
+      <h2>Nuestros videos</h2>
+      <p>Nuestra historia no se detiene, tú y yo en movimiento</p>
+    </div>
+    <div class="videos__container" id="videos-container">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Para siempre, tú y yo</p>
+    <span class="footer__heart" aria-hidden="true">&#x2726;</span>
+    <p class="footer__small">— Hecho con todo mi amor —</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de fotografías" hidden>
+    <button class="lightbox__close" aria-label="Cerrar visor">&times;</button>
+    <button class="lightbox__btn lightbox__prev" aria-label="Fotografía anterior">&lsaquo;</button>
+    <button class="lightbox__btn lightbox__next" aria-label="Siguiente fotografía">&rsaquo;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" class="lightbox__image">
+      <p class="lightbox__caption"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
