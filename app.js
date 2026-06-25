@@ -5,11 +5,10 @@
     photos: [
       { src: 'assets/images/photo-1.jpg', alt: 'Pareja en un momento especial juntos', caption: 'El día que comenzó todo' },
       { src: 'assets/images/photo-2.jpg', alt: 'Sonrisa compartida de la pareja', caption: 'Tu sonrisa, mi lugar favorito' },
-      { src: 'assets/images/photo-3.jpg', alt: 'Mirada cómplice entre los dos', caption: 'Esa mirada que lo dice todo' },
+      { src: 'assets/images/photo-3.jpg', alt: 'Mirada cómplice entre los dos', caption: 'La pieza que completa mi corazón.' },
       { src: 'assets/images/photo-4.jpg', alt: 'Abrazo sincero de la pareja', caption: 'Donde terminan mis brazos, empiezas tú' },
       { src: 'assets/images/photo-5.jpg', alt: 'Aventura de la pareja juntos', caption: 'Cada paso a tu lado es un destino' },
       { src: 'assets/images/photo-6.jpg', alt: 'Atardecer en pareja', caption: 'El sol se pone, nosotros no' },
-      { src: 'assets/images/photo-7.jpg', alt: 'Momento íntimo de la pareja', caption: 'Así, siempre así, juntos' },
     ],
     videos: [
       { src: 'assets/videos/video-1.mp4', caption: 'Risas que quiero guardar para siempre' },
