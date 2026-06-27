@@ -9,6 +9,7 @@
       { src: 'assets/images/photo-4.jpg', alt: 'Abrazo sincero de la pareja', caption: 'Donde terminan mis brazos, empiezas tú' },
       { src: 'assets/images/photo-5.jpg', alt: 'Aventura de la pareja juntos', caption: 'Cada paso a tu lado es un destino' },
       { src: 'assets/images/photo-6.jpg', alt: 'Atardecer en pareja', caption: 'El sol se pone, nosotros no' },
+      { src: 'assets/images/photo-7.jpg', alt: 'Mensaje especial esperando ser leído', caption: 'Haz click para leer' },
     ],
   };
 
