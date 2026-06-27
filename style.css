@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -80,7 +81,7 @@ a {
   position: absolute;
   inset: 0;
   background: radial-gradient(
-    circle 500px at 50% 45%,
+    circle clamp(180px, 50vw, 500px) at 50% 45%,
     rgba(201, 169, 110, 0.10) 0%,
     transparent 70%
   );
